@@ -25,7 +25,6 @@ Retrieval-Augmented Generation (RAG) combines:
 - **Generation** → Producing answers using an LLM  
 
 ### 🔄 Flow in this project:
-
 User Query → Embedding → Vector DB → Retrieval → Context → LLM → Answer
 
 ---
@@ -35,29 +34,13 @@ User Query → Embedding → Vector DB → Retrieval → Context → LLM → Ans
 ### Step-by-step pipeline:
 
 1. **Document Upload**
-   - User uploads a `.txt` file
-
 2. **Text Chunking**
-   - Document is split into smaller chunks
-
 3. **Embedding Generation**
-   - Each chunk is converted into vectors using:
-   - `sentence-transformers/all-MiniLM-L6-v2`
-
-4. **Vector Storage**
-   - Stored in FAISS (Vector Database)
-
+4. **Vector Storage (FAISS)**
 5. **Query Processing**
-   - User question is converted into embedding
-
 6. **Retrieval (RAG Core)**
-   - Similar chunks are retrieved using vector similarity
-
 7. **Context Building**
-   - Retrieved chunks are combined into context
-
 8. **Answer Generation**
-   - LLM (`flan-t5-base`) generates final response
 
 ---
 
@@ -65,13 +48,13 @@ User Query → Embedding → Vector DB → Retrieval → Context → LLM → Ans
 
 This project follows the architecture of the **Endee Vector Database**.
 
-- FAISS is used as a local simulation
-- The system is designed to integrate Endee via API
+- FAISS is used as a local vector store  
+- Designed for seamless integration with Endee  
 
 ### In production, Endee would:
-- Replace FAISS
-- Provide scalable vector search
-- Enable real-time semantic retrieval
+- Replace FAISS  
+- Provide scalable vector search  
+- Enable real-time semantic retrieval  
 
 ---
 
@@ -90,9 +73,6 @@ This project follows the architecture of the **Endee Vector Database**.
 ## ⚙️ Installation
 
 ```bash
-git clone https://github.com/your-username/rag-chatbot.git
+git clone https://github.com/IzherBajeed/rag-chatbot.git
 cd rag-chatbot
 pip install -r requirements.txt
-
-## 📸 Demo
-![Demo](screenshot.png)
