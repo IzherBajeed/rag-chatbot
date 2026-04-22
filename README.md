@@ -76,3 +76,14 @@ This project follows the architecture of the **Endee Vector Database**.
 git clone https://github.com/IzherBajeed/rag-chatbot.git
 cd rag-chatbot
 pip install -r requirements.txt
+
+---
+
+## 📸 Demo
+
+### 🔹 Application Interface
+![Demo](https://raw.githubusercontent.com/IzherBajeed/rag-chatbot/main/screenshot.png)
+
+### 🔹 Example Interaction
+- **Question:** What is AI?  
+- **Answer:** Artificial Intelligence is the simulation of human intelligence.
