@@ -93,3 +93,6 @@ This project follows the architecture of the **Endee Vector Database**.
 git clone https://github.com/your-username/rag-chatbot.git
 cd rag-chatbot
 pip install -r requirements.txt
+
+## 📸 Demo
+![Demo](screenshot.png)
