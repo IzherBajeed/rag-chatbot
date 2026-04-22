@@ -69,13 +69,13 @@ This project follows the architecture of the **Endee Vector Database**.
 | UI | Streamlit |
 
 ---
-
 ## ⚙️ Installation
 
 ```bash
 git clone https://github.com/IzherBajeed/rag-chatbot.git
 cd rag-chatbot
 pip install -r requirements.txt
+```
 
 ---
 
